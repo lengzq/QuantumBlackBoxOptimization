@@ -1,4 +1,4 @@
-# Algorithms for two black-box optimizations 
+# High-dimensional Black-box optimization algorithms
 # (demonstrated on quantum optimal control for a transmon qubit).
 
 
