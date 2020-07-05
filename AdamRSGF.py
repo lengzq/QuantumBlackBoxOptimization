@@ -6,7 +6,7 @@ class AdamRsgf(Optimizer.Optimizer):
     def _optimize_one_step(self, objective_fun, theta):
         theta = np.array(theta)
         self._thetas += [theta]
-        # Evaulate objective function
+        # Evaulate objective function.
         objective_value = objective_fun(theta)
         self._objective_values += [objective_value]
         
@@ -17,11 +17,11 @@ class AdamRsgf(Optimizer.Optimizer):
             self._m_list = [np.zeros_like(theta)]
             self._v_list = [np.zeros_like(theta)]
         
-        # Current perturbation size
+        # Current perturbation size.
         ct = self._c/self._t**self._c_decay
         self._c_list += [ct]
         
-        # Compute averaged objective values with perturbation
+        # Compute averaged objective values with perturbation.
         cumulated_gradient = 0
         for _ in range(self._num_repeat):
             # Sample a random perturbation mu from Gaussian distribution 
@@ -33,7 +33,7 @@ class AdamRsgf(Optimizer.Optimizer):
             objective_value_plus = objective_fun(theta_plus)
             self._objective_values_plus += [objective_value_plus]
             
-            # Estimate the gradient
+            # Estimate the gradient.
             gradient = (objective_value_plus - objective_value) * mu/ct
             self._g_ls += [gradient]
             cumulated_gradient += gradient
