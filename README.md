@@ -1,4 +1,5 @@
-# Algorithms for two black-box optimizations (demonstrated on a quantum system).
+# Algorithms for two black-box optimizations 
+# (demonstrated on quantum optimal control for a transmon qubit).
 
 
 Python implementation of AdamSPSA and AdamRSGF algorithms based on the following paper:
@@ -11,3 +12,9 @@ Python implementation of AdamSPSA and AdamRSGF algorithms based on the following
   year={2019}
 }
 ```
+## Experimental optimization loss landscape.
+![Image](https://github.com/lengzq/QuantumBlackBoxOptimization/blob/master/QubitLossLandscape.png)
+
+## Benchmarking optimization algorithms.
+![Image](https://github.com/lengzq/QuantumBlackBoxOptimization/blob/master/BenchmarkAlgorithm.png)
+
