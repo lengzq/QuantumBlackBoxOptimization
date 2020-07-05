@@ -1,5 +1,4 @@
-# High-dimensional Black-box optimization algorithms
-# (demonstrated on quantum optimal control for a transmon qubit).
+# High-dimensional Black-box optimization algorithms (demonstrated on quantum optimal control for a transmon qubit).
 
 
 Python implementation of AdamSPSA and AdamRSGF algorithms based on the following paper:
